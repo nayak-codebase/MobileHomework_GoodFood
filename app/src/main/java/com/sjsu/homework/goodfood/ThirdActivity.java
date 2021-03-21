@@ -36,9 +36,9 @@ public class ThirdActivity extends AppCompatActivity {
     private void displayOrderSummary(String pizzaName, int price, String size, String crustType,
             String sauceType, int quantity) {
 
-        TextView teaNameTextView = (TextView) findViewById(
+        TextView foodNameTextView = (TextView) findViewById(
                 R.id.summary_pizza_name);
-        teaNameTextView.setText(pizzaName);
+        foodNameTextView.setText(pizzaName);
 
         TextView quantityTextView = (TextView) findViewById(
                 R.id.summary_quantity);
@@ -48,13 +48,13 @@ public class ThirdActivity extends AppCompatActivity {
                 R.id.summary_pizza_size);
         sizeTextView.setText(size);
 
-        TextView milkTextView = (TextView) findViewById(
+        TextView crustTextView = (TextView) findViewById(
                 R.id.summary_crust_type);
-        milkTextView.setText(crustType);
+        crustTextView.setText(crustType);
 
-        TextView sugarTextView = (TextView) findViewById(
+        TextView sauceTextView = (TextView) findViewById(
                 R.id.summary_sauce_type);
-        sugarTextView.setText(sauceType);
+        sauceTextView.setText(sauceType);
 
         TextView priceTextView = (TextView) findViewById(
                 R.id.summary_total_price);
